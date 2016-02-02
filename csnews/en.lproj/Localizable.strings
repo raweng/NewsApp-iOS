@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  csnews
+
+  Created by Reefaq on 15/10/15.
+  Copyright © 2015 Reefaq. All rights reserved.
+*/
+
+//Menu
+"Top News" = "Top News";
+
+//VC title
+"Stack News" = "Stack News";
+
+//Section title
+"TOP NEWS" = "TOP NEWS";
+
+//AlertSheet title
+"Change Language" = "Change Language";
+
+//Buttons in AlertSheet
+"Cancel" = "Cancel";
+
+"English (Default)" = "English (Default)";
+
+"हिंदी" = "हिंदी";
