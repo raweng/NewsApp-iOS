@@ -1,9 +1,6 @@
 # NewsApp-iOS
 Sample News app written in Swift showing use of Contentstack SDK.
 
-## Introduction
-* Sample News application
-
 ![Screen1][1]
  
 ## Content Modelling in Contentstack (Content Type)
@@ -17,11 +14,11 @@ Create **News** Content Type
 
 ![News_CT][3]
 
-## Download Blank XCode Project
+## Clone repository
 
-Built.io Contentstack provides a blank project with all the settings pre-configured in it. This project also contains the iOS SDK, so you need not download it separately. You simply need to [download the project][4] to get started with your app. 
+Open Terminal (for Mac and Linux users) or the command prompt (for Windows users) and paste the below command to clone the project.
 
-**Note: Before saving this project to your system, make sure you rename it as per your requirement.**
+    $ git clone https://github.com/raweng/NewsApp-iOS.git
 
 ## Usage
 
@@ -76,6 +73,6 @@ For more details about Query, refer [Contentstack Query Guide][0]
     
 [0]: <http://csdocs.builtapp.io/developer/ios/query-guide>
   [1]: https://api.contentstack.io/v2/assets/567180332b84a7fe5f23fc44/download?uid=bltdbd68f89ff7c253d&AUTHTOKEN=bltefb4f32b56206d8e5bc6cb9e
-  [2]: https://api.contentstack.io/v1/uploads/56b85f310ea5e91f35d9ffbb/download?uid=blt0ef50bfc28445d08&AUTHTOKEN=bltefb4f32b56206d8e5bc6cb9e
+  [2]: https://api.contentstack.io/v2/assets/56b85f310ea5e91f35d9ffbb/download?uid=blt0ef50bfc28445d08?AUTHTOKEN=bltf921dacdd808e2b6cf4150ac
   [3]: https://api.contentstack.io/v1/uploads/56b85f390ea5e91f35d9ffc6/download?uid=blt04d8d8e7c7c632c5&AUTHTOKEN=bltefb4f32b56206d8e5bc6cb9e
   [4]: http://contentstackiossdk.builtapp.io/csio-quickstart.zip
