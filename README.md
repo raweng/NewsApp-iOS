@@ -1,16 +1,19 @@
-# NewsApp-iOS
+## Introduction
 Sample News app written in Swift showing use of Contentstack SDK.
 
 ![Screen1][1]
  
-## Content Modelling in Contentstack (Content Type)
-In this news application, we will create 2 Content Types viz., Category and News. Let's see how to create it in Contentstack.
+## Create Content Type - Category and News
+In this news application, we will create 2 Content Types viz., Category and News. Download the JSON format of Category and News content type and import it in Contentstack.
+Category JSON
+News JSON 
+  To learn more about how to import content type, check out the guide.
 
-Create **Category** Content Type
+**Category** Content Type
 
 ![Category_CT][2]
 
-Create **News** Content Type
+**News** Content Type
 
 ![News_CT][3]
 
@@ -20,12 +23,12 @@ Open Terminal (for Mac and Linux users) or the command prompt (for Windows users
 
     $ git clone https://github.com/raweng/NewsApp-iOS.git
 
+## Configure project
+Grab API Key and Access Token from Contentstack admin interface, Settings > General and Update the config parameters in SDK initialisation step:
+
+    let stack:Stack = Contentstack.stackWithAPIKey("API_KEY", accessToken: "ACCESS_TOKEN", environmentName: "ENVIRONMENT_NAME")
+
 ## Usage
-
-#### SDK Initialization
-Grab API Key and Access Token from Contentstack management screen.
-
-    let stack:Stack = Contentstack.stackWithAPIKey("blt5fbafb8f08f9d6d0", accessToken: AccessToken, environmentName: "dev")
 
 #### Query News Items 
 Home page shows list of top news that we have created in Contentstack. Let’s see how to query Contentstack. 
