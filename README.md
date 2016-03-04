@@ -1,21 +1,24 @@
 ## Introduction
 Sample News app written in Swift showing use of Contentstack SDK.
 
-![Screen1][1]
+<img src='https://api.contentstack.io/v2/assets/567180332b84a7fe5f23fc44/download?uid=bltdbd68f89ff7c253d&AUTHTOKEN=bltefb4f32b56206d8e5bc6cb9e' width='650' height='550'/>
  
 ## Create Content Type - Category and News
 In this news application, we will create 2 Content Types viz., Category and News. Download the JSON format of Category and News content type and import it in Contentstack.
-Category JSON
-News JSON 
-  To learn more about how to import content type, check out the guide.
 
-**Category** Content Type
+[Category JSON](https://api.contentstack.io/v2/assets/56d5971b3ca9925f3308f3df/download?uid=blte6c36c6b5649f69a&AUTHTOKEN=blt0d34ed82cc45c4d16a0e25d0)
 
-![Category_CT][2]
+[News JSON](https://api.contentstack.io/v2/assets/56d59728d2eb69223c27935f/download?uid=blte2e550aa822a2554&AUTHTOKEN=blt0d34ed82cc45c4d16a0e25d0).
 
-**News** Content Type
+To learn more about how to import content type, check out the [guide](http://contentstackdocs.built.io/developer/guides/content-types#import-a-content-type).
 
-![News_CT][3]
+Create **Category** Content Type
+
+<img src='https://api.contentstack.io/v2/assets/56b85f310ea5e91f35d9ffbb/download?uid=blt0ef50bfc28445d08&AUTHTOKEN=bltbfb694c915ad7c3b24584a7b' width='600' height='400'/>
+
+Create **News** Content Type
+
+<img src='https://api.contentstack.io/v1/uploads/56b85f390ea5e91f35d9ffc6/download?uid=blt04d8d8e7c7c632c5&AUTHTOKEN=bltefb4f32b56206d8e5bc6cb9e' width='600' height='550'/>
 
 ## Clone repository
 
@@ -75,7 +78,3 @@ For more details about Query, refer [Contentstack Query Guide][0]
     //allNewsByCategoryQuery.language(Language.HINDI_INDIA)
     
 [0]: <http://csdocs.builtapp.io/developer/ios/query-guide>
-  [1]: https://api.contentstack.io/v2/assets/567180332b84a7fe5f23fc44/download?uid=bltdbd68f89ff7c253d&AUTHTOKEN=bltefb4f32b56206d8e5bc6cb9e
-  [2]: https://api.contentstack.io/v2/assets/56b85f310ea5e91f35d9ffbb/download?uid=blt0ef50bfc28445d08&AUTHTOKEN=bltbfb694c915ad7c3b24584a7b
-  [3]: https://api.contentstack.io/v1/uploads/56b85f390ea5e91f35d9ffc6/download?uid=blt04d8d8e7c7c632c5&AUTHTOKEN=bltefb4f32b56206d8e5bc6cb9e
-  [4]: http://contentstackiossdk.builtapp.io/csio-quickstart.zip
