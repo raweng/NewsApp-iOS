@@ -1,7 +1,7 @@
 ## Introduction
 Sample News app written in Swift showing use of Contentstack SDK.
 
-<img src='https://api.contentstack.io/v2/assets/567180332b84a7fe5f23fc44/download?uid=bltdbd68f89ff7c253d&AUTHTOKEN=bltefb4f32b56206d8e5bc6cb9e' width='650' height='550'/>
+<img src='https://api.contentstack.io/v2/assets/56d92c3811420d24232dc99b/download?uid=blt1abeb9dc7292dfd3&AUTHTOKEN=blt0d34ed82cc45c4d16a0e25d0' width='650' height='550'/>
  
 ## Create Content Type - Category and News
 In this news application, we will create 2 Content Types viz., Category and News. Download the JSON format of Category and News content type and import it in Contentstack.
