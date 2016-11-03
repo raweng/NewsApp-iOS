@@ -34,12 +34,12 @@ class NewsDetailController: UIViewController, UIWebViewDelegate {
         self.bannerImageView.layer.insertSublayer(gradientForImage, atIndex: 0)
 
         if (newsArticle != nil){
-            if(!newsArticle["featured_image"].isKindOfClass(NSNull.classForCoder())){
+            if(!newsArticle["featured_image"]!.isKindOfClass(NSNull.classForCoder())){
                 let bannerDict:[NSString: AnyObject] = newsArticle["featured_image"] as! [NSString: AnyObject]
                 let imageURLString = bannerDict["url"] as! String
                 self.bannerImageView.contentMode = UIViewContentMode.ScaleAspectFill
                 self.bannerImageView.clipsToBounds = true
-                self.bannerImageView.kf_setImageWithURL(NSURL(string: imageURLString + "?AUTHTOKEN="+AccessToken)!)
+                self.bannerImageView.kf_setImageWithURL(NSURL(string: imageURLString)!)
             }else {
                 self.bannerImageView.image = nil;
             }
@@ -48,7 +48,7 @@ class NewsDetailController: UIViewController, UIWebViewDelegate {
             
             self.detailWebView.delegate = self
             self.detailWebView.scrollView.scrollEnabled = false;
-            if(!newsArticle["body"].isKindOfClass(NSNull.classForCoder())){
+            if(!newsArticle["body"]!.isKindOfClass(NSNull.classForCoder())){
                 let description = newsArticle["body"] as! String
                 self.detailWebView.loadHTMLString(description, baseURL: nil)
             }

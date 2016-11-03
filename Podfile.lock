@@ -1,13 +1,18 @@
 PODS:
+  - Contentstack (3.0.0)
   - Kingfisher (1.6.1)
   - NVActivityIndicatorView (2.0)
 
 DEPENDENCIES:
+  - Contentstack (~> 3.0)
   - Kingfisher (~> 1.6)
   - NVActivityIndicatorView (= 2.0)
 
 SPEC CHECKSUMS:
+  Contentstack: 5b3009f7d53bd1f5f50dc78b14adbea62a0acfc9
   Kingfisher: a40cf8134ba1a78f395bdd3ee97d386ff3c3be0d
   NVActivityIndicatorView: cf985d36b502d01e4670d3026fb8e30494a6fd6a
 
-COCOAPODS: 0.37.2
+PODFILE CHECKSUM: 61313398383d431c570cc5d479e1884fafc11693
+
+COCOAPODS: 1.1.0.rc.2

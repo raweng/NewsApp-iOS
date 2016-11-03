@@ -180,7 +180,6 @@ class TopNewsController: UIViewController, UITableViewDataSource, UITableViewDel
         allNewsByCategoryQuery.includeReferenceFieldWithKey(["category"])
         allNewsByCategoryQuery.orderByAscending("updated_at")
         
-        self.newsArticles.removeAll(keepCapacity: false)
         
         allNewsByCategoryQuery.find { (responseType, result, error) -> Void in
             
@@ -196,7 +195,9 @@ class TopNewsController: UIViewController, UITableViewDataSource, UITableViewDel
                 }
             }else {
                 
-                for entry:Entry in (result.getResult() as! [(Entry)]){
+                self.newsArticles.removeAll(keepCapacity: false)
+
+                for entry:Entry in (result!.getResult() as! [(Entry)]){
                     self.newsArticles.append(entry)
                     
                     var category:String = ""
@@ -285,12 +286,12 @@ class TopNewsController: UIViewController, UITableViewDataSource, UITableViewDel
 
             self.currentIndex = self.highlitedIndex
             let entry:Entry = self.bannerNewsList[self.highlitedIndex]
-            if(!entry["featured_image"].isKindOfClass(NSNull)){
+            if(!entry["featured_image"]!.isKindOfClass(NSNull)){
                 let bannerDict:[NSString: AnyObject] = entry["featured_image"] as! [NSString: AnyObject]
                 let imageURLString = bannerDict["url"] as! String
                 self.bannerImage.contentMode = UIViewContentMode.ScaleAspectFill
                 self.bannerImage.clipsToBounds = true
-                self.bannerImage.kf_setImageWithURL(NSURL(string: imageURLString + "?AUTHTOKEN="+AccessToken)!,
+                self.bannerImage.kf_setImageWithURL(NSURL(string: imageURLString)!,
                     placeholderImage: nil,
                     optionsInfo: [.Transition: ImageTransition.Fade(0.1)])
 

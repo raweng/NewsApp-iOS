@@ -96,10 +96,10 @@ class CategoryController: UITableViewController {
             if(error != nil){
                 print(error)
             }else {
-                let entries:[(Entry)]! = result.getResult() as! [(Entry)]
+                let entries:[(Entry)]! = result!.getResult() as! [(Entry)]
                 if(entries != nil && entries.count > 0){
                     self.categoryList.removeAll(keepCapacity: false)
-                    for entry:Entry in (result.getResult() as! [(Entry)]){
+                    for entry:Entry in (result!.getResult() as! [(Entry)]){
                         self.categoryList.append(entry)
                     }
                     self.tableView.reloadData()

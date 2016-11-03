@@ -49,13 +49,13 @@ class NewsCell: UITableViewCell {
         self.dateLabel.text = dtString
         self.bannerImageView.backgroundColor = UIColor.darkGrayColor()
         
-        if(!entry["thumbnail"].isKindOfClass(NSNull)){
+        if(!entry["thumbnail"]!.isKindOfClass(NSNull)){
             let bannerDict:[NSString: AnyObject] = entry["thumbnail"] as! [NSString: AnyObject]
             let imageURLString = bannerDict["url"] as! String
             self.bannerImageView.contentMode = UIViewContentMode.ScaleAspectFill
             self.bannerImageView.clipsToBounds = true
             self.bannerImageView.kf_showIndicatorWhenLoading = true
-            self.bannerImageView.kf_setImageWithURL(NSURL(string: imageURLString + "?AUTHTOKEN="+AccessToken)!,
+            self.bannerImageView.kf_setImageWithURL(NSURL(string: imageURLString)!,
                 placeholderImage: UIImage(named: "thumbImage"),
                 optionsInfo: [.Transition: ImageTransition.Fade(0.1)])
         }else {
